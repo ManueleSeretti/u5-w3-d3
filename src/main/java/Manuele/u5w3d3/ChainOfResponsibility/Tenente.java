@@ -7,7 +7,7 @@ public class Tenente extends Ufficiale {
 
     @Override
     public void doCheck(int salary) {
-        if (this.getSalary() > salary) {
+        if (this.getSalary() >= salary) {
             System.out.println("dal tenente in su prendono più di " + salary + " euro");
         } else {
             this.goNext(salary);

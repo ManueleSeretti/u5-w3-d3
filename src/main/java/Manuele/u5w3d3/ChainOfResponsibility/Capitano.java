@@ -13,7 +13,7 @@ public class Capitano extends Ufficiale {
 
     @Override
     public void doCheck(int salary) {
-        if (this.getSalary() > salary) {
+        if (this.getSalary() >= salary) {
             System.out.println("dal capitano in su prendono più di " + salary + " euro");
         } else {
             this.goNext(salary);

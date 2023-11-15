@@ -1,15 +1,18 @@
 package Manuele.u5w3d3.Composite;
 
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Component
+@Order(2)
 public class CompositeRunner implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
+        System.out.println("----------------------------ESERCIZO 2--------------------------------");
         List<Written> pageList1 = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
             pageList1.add(new Page("pagina numero " + i));
